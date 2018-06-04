@@ -109,6 +109,7 @@ Custom property | Description | Default
 `--paper-input-container-underline` | Mixin applied to the underline | `{}`
 `--paper-input-container-underline-focus` | Mixin applied to the underline when the input is focused | `{}`
 `--paper-input-container-underline-disabled` | Mixin applied to the underline when the input is disabled | `{}`
+`--paper-input-container-wrapper` | Mixin applied to the input wrapper | `{}`
 `--paper-input-prefix` | Mixin applied to the input prefix | `{}`
 `--paper-input-suffix` | Mixin applied to the input suffix | `{}`
 
@@ -224,6 +225,7 @@ This element is `display:block` by default, but you can set the `inline` attribu
         @apply --layout-horizontal;
         @apply --layout-center;
         position: relative;
+        @apply --paper-input-container-wrapper;
       }
 
       .input-content {
